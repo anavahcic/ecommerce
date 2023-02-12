@@ -1,5 +1,36 @@
 @use "variables" as *;
 
+main {
+	section {
+		margin-bottom: 90px;
+	}
+}
+
+// Popular products
+.titleBar {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 70px;
+}
+
+.product {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.productImgContainer{
+	width: 33.33%;
+	text-align: center;
+	
+	img {
+		border-radius: 5%;
+		margin: 24px;
+		width: calc(100% - 48px);
+	}
+}
+
+// Categories
 .categoryGallery {
   display: flex;
   justify-content: center;
@@ -64,6 +95,29 @@
       background-color: $solidWhite;
     }
   }
+
+// Gallery
+.gallery {
+	background-color: $tertiary;
+	padding: 90px 0;
+	margin: 0;
+	h2 {
+		max-width: 500px;
+	}
+}
+
+.galleryItems {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.item{
+		width: 15%;
+		img{
+			width: 100%;
+			display: block;
+		}
+	}
+}
 
 
   

@@ -1,5 +1,6 @@
 @use "variables" as *;
 
+// Home Page Header
 header {
   background-color: $tertiary;
   margin-bottom: 90px;
@@ -23,6 +24,7 @@ header {
   }
 }
 
+// Contact Page Header
 .contactHeader {
     background-color: $quaternary;
     padding-top: 120px;
@@ -36,6 +38,7 @@ header {
     }
   }
 
+// Wave Design
 .contactHeader::after {
     content: "";
     width: 100%;

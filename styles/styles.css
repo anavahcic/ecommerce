@@ -405,7 +405,6 @@ a.button:focus {
   color: #fff;
 }
 
-/* _nav.scss */
 .navBar {
   position: sticky;
   top: 0;
@@ -421,6 +420,19 @@ a.button:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px 0;
+}
+.navBar input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+}
+.navBar input[type=checkbox]:checked ~ .slideOutNav {
+  left: 0;
+}
+.navBar input[type=checkbox]:focus + label {
+  border: 1px dotted #084b6d;
+}
+.navBar label {
+  cursor: pointer;
 }
 .navBar .searchCart {
   display: -webkit-box;
@@ -603,6 +615,41 @@ header .headerContent .contentContainer {
   background-size: 100% 150px;
 }
 
+main section {
+  margin-bottom: 90px;
+}
+
+.titleBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.productImgContainer {
+  width: 33.33%;
+  text-align: center;
+}
+.productImgContainer img {
+  border-radius: 5%;
+  margin: 24px;
+  width: calc(100% - 48px);
+}
+
 .categoryGallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -689,6 +736,33 @@ header .headerContent .contentContainer {
   padding: 70px 45px;
   border: 24px solid #f4fcff;
   background-color: #fff;
+}
+
+.gallery {
+  background-color: #f8fbf3;
+  padding: 90px 0;
+  margin: 0;
+}
+.gallery h2 {
+  max-width: 500px;
+}
+
+.galleryItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.galleryItems .item {
+  width: 15%;
+}
+.galleryItems .item img {
+  width: 100%;
+  display: block;
 }
 
 .contactForm {
